@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali' Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(img3.jpeg);
+        background-repeat: no-repeat;
+        background-size: 1305px 1000px;
+        height: 1000px;
+        width: 1000px;
+    }
+
+    .left {
+        /* border: 5px solid red; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: inline-block;
+        text-align: end;
+        padding: 0px 0pxS;
+        text-align: center;
+        color: white;
+    }
+
+    .left img {
+        width: 136px;
+    }
+
+    .navbar {
+        width: 60%;
+        margin: 0% 33%;
+        /* border: 2px solid blue; */
+        display: inline-block;
+        text-align: center;
+    }
+
+    .right {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: inline-block;
+        /* border: 5px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 34px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #72e8a2;
+    }
+
+    .btn {
+        margin: 10px 20px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid greenyellow;
+        color: white;
+        margin: 140px 30px;
+        padding: 2px 10px;
+        border-radius: 25px;
+        width: 36%;
+        height: 534px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 280px;
+        padding: 13px;
+        border: 2px solid black;
+        margin: 11px auto;
+    }
+    .container button{
+        display: block;
+        width: 310px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img1.jpeg" alt="Loading">
+            <p>Fitness club</p>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">E-mail Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <H1>Join the best jim of kasur</H1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                Name: <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                Age: <input type="text" name="name" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                Gender: <input type="text" name="name" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                Locality: <input type="text" name="name" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

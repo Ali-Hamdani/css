@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Visibility & Z-index</title>
+     <style>
+         .box{
+             width: 170px;
+             height: 170px;
+             border:5px solid green;
+         }
+         #box1{
+             position: relative;
+             left: 100px;
+             top: 100px;
+             z-index: 50;
+             /* If boxes overlap to each other then the which have the higher visibility index will
+             be on the top. z-index will only work for position relative,absolute,fixed,sticky. */
+             background-color: hotpink; }
+         #box2{
+            position: relative;
+             left: 100px;
+             top: -80px;
+             z-index: 60;
+             /* display: none; */
+             /* display:none; will hide the box but it will not leave the space empty. */
+             /* visibility: hidden; */
+             /* visibility:hidden will hide the box but will leave the space empty. */
+             background-color: lawngreen;}
+         #box3{background-color: blue;}
+         #box4{background-color: burlywood;}
+
+     </style>
+ </head>
+ <body>
+     <div class="box" id="box1"></div>
+     <div class="box" id="box2"></div>
+     <div class="box" id="box3"></div>
+     <div class="box" id="box4"></div>
+     
+ </body>
+ </html>
