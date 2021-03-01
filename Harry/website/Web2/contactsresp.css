@@ -1,0 +1,27 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    margin: 2px 2px;
+    padding: 1px 1px;
+    font-size: 1rem;
+}
+#contact{
+    margin-top: 170px;
+    margin-left: 126px;
+}
+#clints1 .photo{
+    display: flex;
+    flex-direction: column;
+}
+#contact::before{
+    content: "";
+    background: url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 264%;
+    width: 162%;
+    z-index: -1;
+    opacity : 0.8;
+}

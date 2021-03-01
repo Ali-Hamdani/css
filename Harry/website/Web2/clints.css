@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+ul{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a{
+    display: block;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 23px;
+    color: black;
+    background-color: white;
+}
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+#logo img{
+    height: 112px;
+    width: 136px;
+    border-radius: 60px;
+}
+   #clints::before{
+        content: "";
+        background: url(background.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity : 0.8;
+    }
+    #clints1{
+        margin: 120px 20px;
+    }
+    #hclints{
+        text-align: center;
+        font-size: 3rem;
+    }
+    #clints1 .photo{
+        display: flex;
+    }
+    
+    #clints1 img{
+        border: 2px solid black;
+        border-radius: 23px;
+        margin:30px 20px;
+        width: 250px;
+        height: 250px;
+}
+#contact >h1{
+    text-align: center;
+}

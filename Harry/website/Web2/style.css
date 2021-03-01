@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+ul{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a{
+    display: block;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 23px;
+    color: black;
+    background-color: white;
+}
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+#logo img{
+    height: 112px;
+    width: 136px;
+    border-radius: 60px;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    margin: 125px 15px;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+}
+#heading{
+    font-size: 2rem;
+}
+#Home::before{
+    content: "";
+    background: url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1800px;
+    width: 400px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.btn{
+    width: 210px;
+    height: 40px;
+    border-radius: 23px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+#services-container{
+    margin-top: 156px;
+}
+#hs{
+    font-size: 2rem;
+    text-align: center;
+}
+#services{
+    margin: 20px 20px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    border-radius: 23px;
+    width: 350px;
+    padding: 10px 10px;
+    margin: 25px 25px;
+}
+#h-secondary-services{
+    text-align: center;
+}
+#services .box img{
+    height: 220px;
+    width: 345px;
+    margin: auto;
+    display: block;
+    border-radius: 23px;
+}
+#services-container::before{
+    content: "";
+    background: url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 455px;
+    left: 0px;
+    height: 1400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clints1{
+    margin: 20px 20px;
+}
+#hclints{
+    text-align: center;
+    font-size: 3rem;
+}
+#clints1 .photo{
+    display: flex;
+}
+
+#clints1 img{
+    border: 2px solid black;
+    border-radius: 23px;
+    margin:30px 20px;
+    width: 250px;
+    height: 250px;
+}
+#contact >h1{
+    text-align: center;
+}
+#farm{
+    display: flex;
+    justify-content: center;
+}
+#farm button{
+    width: 377px;
+    height: 34px;
+    font-size: 20px;
+    border-radius: 23px;
+}
+#farm button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}

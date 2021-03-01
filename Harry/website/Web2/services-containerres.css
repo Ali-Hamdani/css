@@ -1,0 +1,38 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    margin: 2px 2px;
+    padding: 1px 1px;
+    font-size: 1rem;
+}
+#services .box img{
+    height: auto;
+    width: 345px;
+    margin: auto;
+    display: block;
+    border-radius: 23px;
+}
+#services-container::before{
+    content: "";
+    background: url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 264%;
+    width: 133%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#services{
+    margin: 20px 20px;
+    display: flex;
+flex-direction: column;
+}
+#services .box{
+    border: 2px solid black;
+    border-radius: 23px;
+    width: 350px;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
