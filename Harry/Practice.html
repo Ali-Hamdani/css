@@ -3,16 +3,43 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Restaurant</title>
+     <title>grid area</title>
+     <style>
+         .navbar{
+             display: grid;
+             grid-template-columns: 50px auto;
+         }
+         ul{
+             display: grid;
+             grid-template-columns: repeat(auto-fit,minmax(70px,90px));
+             grid-column-gap:30px;
+             align-items: center;
+             list-style: none;
+             }
+        ul li a{
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 5px 5px;
+            border-radius: 23px;
+        }
+         #logo img{
+             width: 50px;
+         }
+
+     </style>
  </head>
  <body>
-     <header class="contanier1">
-         <div class="box1">
-             <div class="2">
-                 <img src="" alt="">
+     <div class="navbar">
+             <div id="logo" class="item">
+                 <img src="beauty.jpg" alt="">
              </div>
+             <ul>
+                 <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#About Us">About Us</a></li>
+                     <li><a href="#Contact Us"> Contact Us</a></li>
+             </ul>
          </div>
-     </header>
      
  </body>
  </html>
