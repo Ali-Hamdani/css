@@ -2,44 +2,29 @@
  <html lang="en">
  <head>
      <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>grid area</title>
+     <title>Flexbox</title>
      <style>
-         .navbar{
-             display: grid;
-             grid-template-columns: 50px auto;
+         .container{
+             display:grid;
+             grid-template-columns: 2fr 2fr 3fr;
+      
+
+
          }
-         ul{
-             display: grid;
-             grid-template-columns: repeat(auto-fit,minmax(70px,90px));
-             grid-column-gap:30px;
-             align-items: center;
-             list-style: none;
-             }
-        ul li a{
-            text-decoration: none;
-            border: 2px solid black;
-            padding: 5px 5px;
-            border-radius: 23px;
-        }
-         #logo img{
-             width: 50px;
-         }
+         .item{
+             border: 4px solid black;
+             margin: 23px 23px;
 
      </style>
+
  </head>
  <body>
-     <div class="navbar">
-             <div id="logo" class="item">
-                 <img src="beauty.jpg" alt="">
-             </div>
-             <ul>
-                 <li><a href="#Home">Home</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#About Us">About Us</a></li>
-                     <li><a href="#Contact Us"> Contact Us</a></li>
-             </ul>
-         </div>
-     
+     <div class="container">
+         <div class="item" id="first">Hello</div>
+         <div class="item" id="second">Hi</div>
+         <div class="item" id="third">Bay</div>
+        </div>
  </body>
  </html>
